@@ -9,7 +9,6 @@ import javax.persistence.ManyToOne;
 
 public class WebSeriesEntryDto {
 
-
     private String seriesName;
 
     private int ageLimit;
@@ -21,8 +20,8 @@ public class WebSeriesEntryDto {
     private Integer productionHouseId;
 
     public WebSeriesEntryDto(String seriesName, int ageLimit, double rating, SubscriptionType subscriptionType, Integer productionHouseId) {
-        this.ageLimit = ageLimit;
         this.seriesName = seriesName;
+        this.ageLimit = ageLimit;
         this.rating = rating;
         this.subscriptionType = subscriptionType;
         this.productionHouseId = productionHouseId;
